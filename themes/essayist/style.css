@@ -1,0 +1,47 @@
+/*   
+Theme Name: LairBob
+Theme URI: http://lairbob.com/
+Description: Theme based on Thematic
+Author: Laurent Stanevich
+Author URI: http://lairbob.com/
+Template: thematic
+Version: 1.0
+Tags: Thematic, LairBob
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/* Typography elements
+-------------------------------------------------------------- */
+
+body, input, textarea {
+    font-family: Palatino, Georgia, 'Times New Roman', serif;
+    font-size: 1.125;
+    line-height: 1.5em;
+    text-indent: 1em;
+}
+
+/* Text elements
+-------------------------------------------------------------- */
+
+p {
+font-family:Palatino,Georgia,'Times New Roman',serif;
+line-height:1.5em;
+}
