@@ -6,7 +6,6 @@ body, input, textarea {
     font-family: Palatino, Georgia, 'Times New Roman', serif;
     font-size: 1.125;
     line-height: 1.5em;
-    text-indent: 1em;
 }
 p, ul, ol, dd, pre {
     margin-bottom:22px;
@@ -304,7 +303,9 @@ ul.sf-menu li li li.sfHover ul {
 .entry-content h3 {
     font-size:17px;
     font-style:italic;
-    padding:28px 0 14px 0;
+    padding: 28px 0 0;
+    text-align: right;
+    margin-bottom: 8px;
 }
 .entry-content h4 {
     font-size:11px;

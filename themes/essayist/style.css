@@ -41,19 +41,16 @@ pre, code {
 
 
 body, input, textarea, p, li {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-    font-size: 0.95em;
+    font-family: Georgia,'Times New Roman',times,serif;
+    font-size: 1em;
     line-height: 1.75;
+    text-align: justify;
 }
 
 /* Text elements
 -------------------------------------------------------------- */
 
 
-
-body .content p li {
-    line-height: 1.75;
-}
 
 h1, h2, h3, h4 {
     font-family: Cambria, Georgia, "Times New Roman", serif;
@@ -224,7 +221,8 @@ body .summary {
     margin-bottom: 1em;
     margin-top: 1em;
     font-style: italic;
-    line-height: 1.3;
+    line-height: 1.75;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* Inline images
