@@ -16,7 +16,7 @@ Tags: Thematic, LairBob, Essayist
 @import url('typography.css');
 
 /* Apply a basic layout */
-@import url('../thematic/library/layouts/3c-fixed.css');
+@import url('grid.css');
 
 /* Apply basic image styles */
 @import url('../thematic/library/styles/images.css');
@@ -38,6 +38,9 @@ Tags: Thematic, LairBob, Essayist
 
 /* Apply basic sliding panel styles */
 @import url('image.css');
+
+/* Apply basic sliding panel styles */
+@import url('sidebar.css');
 
 /* Apply default theme styles and colors */
 /* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
@@ -70,13 +73,14 @@ body, input, textarea, p, li {
 
 
 
-h1, h2, h3, h4 {
-    font-family: Cambria, Georgia, "Times New Roman", serif;
-    font-weight: normal;
+h1, h2, h4, h5 {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+    font-weight: bolder;
 }
 
-h1.posttitle, h2.posttitle {
-    font-weight: normal;
+h3 {
+    font-family: 'Cambria', 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 h1 {
@@ -103,60 +107,3 @@ h4, h5 {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-
-
-
-body .custom-type-label {
-    font-family: Verdana, sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 0.75em;
-    text-align: right;
-    text-transform: uppercase;
-    background-color: #FFF2CE;
-}
-
-/* Content
------------------------------------------------ */
-
-body .section-label {
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #EEEEEE;
-    background: #08515F;
-    padding: 3px 8px 3px 8px;
-    margin-top: 5em;
-    margin-bottom: 1em;
-    text-align: right;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
-}
-
-
-
-
-/* Sidebar Category Posts
------------------------------------------- */
-
-body .cat-post-item {
-    color: #505050;
-    line-height: 1.4;
-    margin-bottom: 1em;
-}
-
-body .cat-post-item  p {
-    font-size: 90%;
-    margin-bottom: 1em;
-}
-
-body .cat-post-item  li {
-    margin-bottom: 2em;
-}
-

@@ -67,12 +67,12 @@ blockquote em, blockquote i, blockquote cite {
 	font-style:normal;
 }
 pre {
-	font:11px Monaco, monospace;
+	font:11px Courier, monospace;
 	line-height:18px;
 	margin-bottom:18px;
 }
 code {
-	font:11px Monaco, monospace;
+	font:11px Courier, monospace;
 }
 abbr, acronym {
   border-bottom:1px dotted #333;
@@ -114,23 +114,3 @@ blockquote.right {
 	width: 33%;
 }
 
-/*
-
-Adapt the following for use in your Child Themes when using
-different font-sizes and line-heights
-
-body, input, textarea {
-    font: --px Arial,sans-serif;
-    line-height:--px;
-}
-p, ul, ol, dd, pre {
-    margin-bottom:--px;
-}
-pre, code {
-	font:--px Monaco, monospace;
-	line-height:--px;
-}
-
-All other styles can be overridden--or ignored!--in Child Theme stylesheets
-
-*/
