@@ -2,18 +2,6 @@
 /* =Global Elements
 -------------------------------------------------------------- */
 
-body, input, textarea {
-    font-family: Palatino, Georgia, 'Times New Roman', serif;
-    font-size: 1.125;
-    line-height: 1.5em;
-}
-p, ul, ol, dd, pre {
-    margin-bottom:22px;
-}
-pre, code {
-	font:14px Monaco, monospace;
-	line-height:22px;
-}
 blockquote {
     color:#666;
     font-style:italic;
@@ -65,8 +53,8 @@ a:hover {
 }
 #blog-title {
     font-family:"Helvetica Neue",sans-serif;
-    font-size:34px;
-    font-weight:bold;
+    font-size:72px;
+    font-weight:900;
     line-height:40px;
 }
 #blog-title a {
@@ -75,12 +63,12 @@ a:hover {
 }
 #blog-title a:active,
 #blog-title a:hover {
-    color: #FF4B33;
+    color: #999999;
 }
 #blog-description {
     color:#666;
-    font-size:13px;
-    font-style:italic;
+    font-size:18px;
+    font-weight: 300;
 }
 
 
@@ -251,6 +239,7 @@ ul.sf-menu li li li.sfHover ul {
     font-weight:bold;
     line-height:26px;
     padding:0 0 7px 0;
+    text-align: left;
 }
 .entry-title a {
     color:#000;
@@ -299,7 +288,9 @@ ul.sf-menu li li li.sfHover ul {
     font-size:19px;
     font-weight:bold;
     padding:28px 0 14px 0;
+    line-height: normal;
 }
+
 .entry-content h3 {
     font-size:17px;
     font-style:italic;

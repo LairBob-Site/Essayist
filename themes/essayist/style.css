@@ -13,10 +13,10 @@ Tags: Thematic, LairBob, Essayist
 @import url('../thematic/library/styles/reset.css');
 
 /* Apply basic typography styles */
-@import url('../thematic/library/styles/typography.css');
+@import url('typography.css');
 
 /* Apply a basic layout */
-@import url('../thematic/library/layouts/2c-r-fixed.css');
+@import url('../thematic/library/layouts/3c-fixed.css');
 
 /* Apply basic image styles */
 @import url('../thematic/library/styles/images.css');
@@ -35,14 +35,14 @@ p, ul, ol, dd, pre {
     margin-bottom: 18px;
 }
 pre, code {
-    font:12px Monaco, monospace;
+    font:12px Courier, monospace;
     line-height:1.25;
 }
 
 
 body, input, textarea, p, li {
-    font-family: Georgia,'Times New Roman',times,serif;
-    font-size: 1em;
+    font-family: 'Lucida Sans Unicode',Verdana,Arial,Helvetica,sans-serif;
+    font-size: 13px;
     line-height: 1.75;
     text-align: justify;
 }
@@ -143,6 +143,9 @@ body .overview td {
 body .on-deck {
     padding: 1em;
     background-color: #FFF2CE;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;    
 }
 
 body .on-deck h2 {
@@ -183,14 +186,19 @@ body .PH-draft {
 }
 
 body .section-label {
-    font-size: 85%;
+    font-size: 11px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 900;
     color: #EEEEEE;
     background: #08515F;
-    padding: 0.1em 0em 0.1em 0.5em;
+    padding: 3px 8px 3px 8px;
     margin-top: 5em;
     margin-bottom: 1em;
+    text-align: right;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
 }
 
 
@@ -201,16 +209,20 @@ body .quotation {
     padding: 0 30px;
     color: #808080;
     line-height: 1.4;
+    font-family: Georgia,'Times New Roman',serif;
 }
 
 body .quot_attrib {
     margin: 0;
+    padding: 0 30px;
     text-align:right;
     font-style: italic;
+    font-family: Georgia,'Times New Roman',serif;
 }
 
 body .quot_source {
     text-decoration: underline;
+    font-family: Georgia,'Times New Roman',serif;
 }
 
 
@@ -222,7 +234,7 @@ body .summary {
     margin-top: 1em;
     font-style: italic;
     line-height: 1.75;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+    font-family: Georgia,'Times New Roman',serif;
 }
 
 /* Inline images
