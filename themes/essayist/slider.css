@@ -1,0 +1,40 @@
+/* Sliding Panels
+------------------------------------------ */
+
+
+body .hackadelic-sliderPanel {
+    padding: 1em;
+    background-color: #eeeeee;
+    margin-bottom:2em;
+}
+
+body .hackadelic-sliderPanel p {
+    margin-top: 0;
+}
+
+body .hackadelic-sliderButton {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    text-align:right;
+}
+a.hackadelic-sliderButton {
+    margin-top: 1em;
+    color: #B3960E;
+    margin-bottom: 2em;
+    padding: 0 3px;
+}
+a.hackadelic-sliderButton:hover {
+    background-color: #F0F0E0;
+}
+.entry .hackadelic-sliderPanel {
+    font-size:90%;
+    background-color: #fcfcfc;
+}
+.textwidget .hackadelic-sliderButton {
+    display: block;
+    text-align: center;
+    margin: 0.5em;
+}
+.textwidget .hackadelic-sliderPanel {
+    background-color: #F0F0E0;
+}

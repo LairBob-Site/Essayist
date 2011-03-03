@@ -21,6 +21,24 @@ Tags: Thematic, LairBob, Essayist
 /* Apply basic image styles */
 @import url('../thematic/library/styles/images.css');
 
+/* Apply basic entry styles */
+@import url('entry.css');
+
+/* Apply basic navigation styles */
+@import url('navigation.css');
+
+/* Apply basic sliding panel styles */
+@import url('slider.css');
+
+/* Apply basic sliding panel styles */
+@import url('summary.css');
+
+/* Apply basic sliding panel styles */
+@import url('reference.css');
+
+/* Apply basic sliding panel styles */
+@import url('image.css');
+
 /* Apply default theme styles and colors */
 /* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
 @import url('default.css');
@@ -105,86 +123,6 @@ body .custom-type-label {
 /* Content
 ----------------------------------------------- */
 
-/* Overview Types
------------------------------------------- */
-body .overview {
-    padding: 1em;
-    background-color: #FFF2CE;
-}
-
-body .overview h2 {
-    margin-top: 0;
-}
-
-body .overview h3 {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
-    margin-top: 2em;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #EEEEEE;
-    background: #08515F;
-    padding: 0.2em 0em 0.2em 0.5em;
-    margin-bottom: 1em;
-
-}
-
-body .overview table {
-    width: 100%;
-}
-
-body .overview td {
-    font-size: 90%;
-
-}
-
-
-/* Content Types
------------------------------------------- */
-body .on-deck {
-    padding: 1em;
-    background-color: #FFF2CE;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;    
-}
-
-body .on-deck h2 {
-    margin-top: 0;
-    color: #0A0D64;
-}
-
-body .PH-image {
-    text-align: center;
-    background-color: #BBBBBB;
-    color: #EEEEEE;
-    height: 50px;
-    padding-top: 25px;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-body .PH-note {
-    padding: 1em;
-    background-color: #FFF2CE;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
-body .PH-draft {
-    font-size: 90%;
-    font-style: italic;
-    color: #404040;
-    padding: 1em;
-    margin: 0.5em 0 0.5em 0;
-    background-color: #E0E0E0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-
 body .section-label {
     font-size: 11px;
     text-transform: uppercase;
@@ -202,65 +140,6 @@ body .section-label {
 }
 
 
-/* Quotations
------------------------------------------- */
-body .quotation {
-    margin: 0 0 1em 0;
-    padding: 0 30px;
-    color: #808080;
-    line-height: 1.4;
-    font-family: Georgia,'Times New Roman',serif;
-}
-
-body .quot_attrib {
-    margin: 0;
-    padding: 0 30px;
-    text-align:right;
-    font-style: italic;
-    font-family: Georgia,'Times New Roman',serif;
-}
-
-body .quot_source {
-    text-decoration: underline;
-    font-family: Georgia,'Times New Roman',serif;
-}
-
-
-/* Summary info
------------------------------------------- */
-body .summary {
-    color: #808080;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    font-style: italic;
-    line-height: 1.75;
-    font-family: Georgia,'Times New Roman',serif;
-}
-
-/* Inline images
------------------------------------------- */
-body .size-full {
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-body .screen-grab {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-top: 2px dotted #e5e5e5;
-    border-bottom: 2px dotted #e5e5e5;
-}
-
-body .wp-caption {
-    width: 500px;
-    border: none;
-}
-
-body .wp-caption-text {
-    font-size:0.9em;
-    font-style: italic;
-    margin: 0;
-}
 
 
 /* Sidebar Category Posts
@@ -281,43 +160,3 @@ body .cat-post-item  li {
     margin-bottom: 2em;
 }
 
-/* Sliding Panels
------------------------------------------- */
-
-
-body .hackadelic-sliderPanel {
-    padding: 1em;
-    background-color: #eeeeee;
-    margin-bottom:2em;
-}
-
-body .hackadelic-sliderPanel p {
-    margin-top: 0;
-}
-
-body .hackadelic-sliderButton {
-    margin-top: 3em;
-    margin-bottom: 2em;
-    text-align:right;
-}
-a.hackadelic-sliderButton {
-    margin-top: 1em;
-    color: #B3960E;
-    margin-bottom: 2em;
-    padding: 0 3px;
-}
-a.hackadelic-sliderButton:hover {
-    background-color: #F0F0E0;
-}
-.entry .hackadelic-sliderPanel {
-    font-size:90%;
-    background-color: #fcfcfc;
-}
-.textwidget .hackadelic-sliderButton {
-    display: block;
-    text-align: center;
-    margin: 0.5em;
-}
-.textwidget .hackadelic-sliderPanel {
-    background-color: #F0F0E0;
-}

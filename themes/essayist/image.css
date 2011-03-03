@@ -1,0 +1,25 @@
+/* Inline images
+------------------------------------------ */
+body .size-full {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+body .screen-grab {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 2px dotted #e5e5e5;
+    border-bottom: 2px dotted #e5e5e5;
+}
+
+body .wp-caption {
+    width: 500px;
+    border: none;
+}
+
+body .wp-caption-text {
+    font-size:0.9em;
+    font-style: italic;
+    margin: 0;
+}
+
