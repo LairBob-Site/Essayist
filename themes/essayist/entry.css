@@ -121,10 +121,10 @@
 .entry-content h3 {
     font-size:17px;
     font-style:italic;
-    padding: 28px 0 0;
+    padding: 28px 0 5px;
     text-align: right;
     line-height: normal;
-    margin-bottom: 8px;
+    margin-bottom: 3px;
     width: 460px;
     clear: left;
 }

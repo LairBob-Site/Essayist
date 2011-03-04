@@ -3,38 +3,51 @@
 
 
 body .hackadelic-sliderPanel {
-    padding: 1em;
-    background-color: #eeeeee;
-    margin-bottom:2em;
-}
+    z-index: 1;
+    float: right;
+    position: relative;
+    clear:right;
+    width: 290px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;}
 
 body .hackadelic-sliderPanel p {
+    line-height: 1.4;
+    font-family: Cambria,'Times New Roman',serif;
     margin-top: 0;
+    width: auto;
 }
 
 body .hackadelic-sliderButton {
-    margin-top: 3em;
-    margin-bottom: 2em;
+    z-index: 2;
+    font-size: 12px;
+    width: 290px;
+    position: relative;
+    float:right;
     text-align:right;
+    background-color: #F0F0F0;
+    border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    color: #333333;
+    box-shadow: 0 3px 2px #CCCCCC;
 }
+
 a.hackadelic-sliderButton {
-    margin-top: 1em;
-    color: #B3960E;
-    margin-bottom: 2em;
-    padding: 0 3px;
+    color: #F0F0F0;
+    text-decoration: none;
+    padding: 3px 10px 1px;
 }
 a.hackadelic-sliderButton:hover {
-    background-color: #F0F0E0;
+    background-color: #DDDDDD;
+    color:#004B91;
 }
 .entry .hackadelic-sliderPanel {
-    font-size:90%;
-    background-color: #fcfcfc;
-}
-.textwidget .hackadelic-sliderButton {
-    display: block;
-    text-align: center;
-    margin: 0.5em;
-}
-.textwidget .hackadelic-sliderPanel {
-    background-color: #F0F0E0;
+    /* font-size:90%;
+    background-color: #fcfcfc; */
 }

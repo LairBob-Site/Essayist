@@ -1,10 +1,10 @@
 /* Quotations
 ------------------------------------------ */
-body .quotation {
+body .quotation, .sidenote {
     float: right;
     position: relative;
     clear:none;
-    width: 280px;
+    width: 300px;
     margin: 0;
     padding: 0;
     color: #808080;
@@ -12,11 +12,12 @@ body .quotation {
     font-family: Cambria,'Times New Roman',serif;
 }
 
+body .sidenote-title {
+    font-weight: bold;
+}
+
 body .quot_attrib {
-    float: right;
     clear:none;
-    position: relative;
-    width: 280px;
     margin: 0;
     padding: 0;
     text-align:right;

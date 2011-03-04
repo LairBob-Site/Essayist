@@ -78,11 +78,6 @@ h1, h2, h4, h5 {
     font-weight: bolder;
 }
 
-h3 {
-    font-family: 'Cambria', 'Times New Roman', serif;
-    font-weight: bold;
-}
-
 h1 {
     padding-top: 0.5em;
     margin-bottom: 0.5em;
@@ -96,10 +91,12 @@ h2 {
 }
 
 h3 {
+    font-family: 'Cambria', 'Times New Roman', serif;
+    font-weight: bold;
     font-size: 1.5em;
     color: #A67C00;
     border-bottom: 1px solid #e5e5e5;
-    padding: 0 0 0.4em 0;
+    padding: 0 0 5px 0;
     font-weight: bold;
 }
 

@@ -30,15 +30,15 @@ body {
 #container {
     width:940px;
     float:right;
-    margin: 0 0 0 -310px;
+    margin: 0 0 0 -140px;
 }
 #content {
-    width:780px;
+    width:790px;
     overflow:hidden;
-    margin: 0 0 0 320px;
+    margin: 0 0 0 150px;
 }
 .hentry {
-    width:780px;
+    width:790px;
 }
 .main-aside {
     width:140px;
