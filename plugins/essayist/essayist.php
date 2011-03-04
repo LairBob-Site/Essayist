@@ -14,6 +14,7 @@ include_once dirname(__FILE__) . '/essayist-custom-taxonomies.php';
 
 include_once dirname(__FILE__) . '/essayist-cp-citation.php';
 include_once dirname(__FILE__) . '/essayist-cp-data-point.php';
+include_once dirname(__FILE__) . '/essayist-tools-html-inc.php';
 
 function signOffText() {
     return 'Thank you so much for reading! And remember to subscribe to our RSS feed. ';

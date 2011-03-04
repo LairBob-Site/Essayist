@@ -82,6 +82,21 @@
     clear: left;
 }
 
+.entry-content h1+p::first-line, .summary+p::first-line  {
+    text-transform: uppercase;
+}
+
+.entry-content h1+p::first-letter, .summary+p::first-letter  {
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin: 7px 5px 5px 0;
+    font-family: Cambria, Georgia, 'Times New Roman', serif;
+    font-size: 81px;
+    color: #444444;
+    font-weight: bolder;
+}
+
 .entry-content ul, ol {
     width: 428px;
     clear: left;
