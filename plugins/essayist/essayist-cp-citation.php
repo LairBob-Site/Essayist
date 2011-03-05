@@ -2,7 +2,6 @@
 
 // INIT ROUTINES -- test
 add_action('init', 'citations_register');
-
 function citations_register() {
     $labels = array(
         'name' => _x('Citations', 'post type general name'),
@@ -76,7 +75,7 @@ function citation_edit_columns($columns) {
         "description" => "Description",
         "source_author" => "Author",
         "source_name" => "Source",
-        
+
         "themes" => "Themes",
         "subjects" => "Subjects"
     );
