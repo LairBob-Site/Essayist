@@ -1,0 +1,28 @@
+.main-content h1 {
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+    border-radius: 5px;
+    line-height: normal;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #CCCCCC;
+    border-left-color: #CCCCCC;
+    border-bottom-color: #CCCCCC;
+    border-top-color: #CCCCCC;
+    padding-left: 8px;
+    padding-top: 16px;
+    padding-right: 8px;
+    padding-bottom: 16px;
+}
+
+.main-content h1:hover {
+    background-color: #DDDDDD;
+}
