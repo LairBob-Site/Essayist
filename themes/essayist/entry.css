@@ -73,7 +73,7 @@
     text-transform: uppercase;
 }
 
-.entry-content h1+p::first-letter, .summary+p::first-letter  {
+/*.entry-content h1+p::first-letter, .summary+p::first-letter  {
     text-transform: uppercase;
     float: left;
     display: block;
@@ -82,7 +82,7 @@
     font-size: 81px;
     color: #444444;
     font-weight: bolder;
-}
+}*/
 
 .entry-content ul, ol {
     width: 428px;
