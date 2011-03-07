@@ -12,6 +12,7 @@ function htmlInclude($atts) {
     $strIncFileName = dirname(__FILE__) . '/includes/' . $incdir . '/' . $incfile;
 
     $strIncFile = file_get_contents($strIncFileName);
+    $strIncFile = do_shortcode($strIncFile);
 
     // Explode the include string into an array of individual lines
     $expIncFile = explode("\n", $strIncFile);
