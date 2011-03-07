@@ -7,7 +7,7 @@ function datapoints_register () {
     $labels = array(
         'name' => _x('Data Points', 'post type general name'),
         'singular_name' => _x('Data Point', 'post type singular name'),
-        'add_new' => _x('Add New', 'datapoints'),
+        'add_new' => _x('Add New', 'data-points'),
         'add_new_item' => __('Add New Data Point'),
         'edit_item' => __('Edit Data Point'),
         'new_item' => __('New Data Point'),
@@ -31,15 +31,15 @@ function datapoints_register () {
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
     );
 
-    register_post_type('datapoints', $args);
-    register_taxonomy_for_object_type('subjects', 'datapoints');
-    register_taxonomy_for_object_type('themes', 'datapoints');
+    register_post_type('data-points', $args);
+    register_taxonomy_for_object_type('subjects', 'data-points');
+    register_taxonomy_for_object_type('themes', 'data-points');
 }
 
 
 add_action('admin_init', 'admin_init_datapoints');
 function admin_init_datapoints() {
-    add_meta_box("datapoint-meta", "Source Info", "datapoint_source", "datapoints", "side", "high");
+    add_meta_box("datapoint-meta", "Source Info", "datapoint_source", "data-points", "side", "high");
 }
 
 function datapoint_source() {
@@ -72,7 +72,7 @@ function datapoint_save() {
     update_post_meta($post->ID, "dp_source_pub_date", $_POST["dp_source_pub_date"]);
 }
 
-add_filter("manage_edit-datapoints_columns", "datapoint_edit_columns");
+add_filter("manage_edit-data-points_columns", "datapoint_edit_columns");
 function datapoint_edit_columns($columns) {
     $columns = array(
         "cb" => "<input type=\"checkbox\" />",
@@ -88,7 +88,7 @@ function datapoint_edit_columns($columns) {
     return($columns);
 }
 
-add_action("manage_datapoints_posts_custom_column", "datapoint_custom_columns");
+add_action("manage_data-points_posts_custom_column", "datapoint_custom_columns");
 function datapoint_custom_columns($column) {
     global $post;
 
@@ -124,7 +124,7 @@ add_filter('post_updated_messages', 'datapoint_updated_messages');
 function datapoint_updated_messages( $messages ) {
   global $post, $post_ID;
 
-  $messages['datapoints'] = array(
+  $messages['data-points'] = array(
     0 => '', // Unused. Messages start at index 1.
     1 => sprintf( __('Data Point updated. <a href="%s">View data point</a>'), esc_url( get_permalink($post_ID) ) ),
     2 => __('Custom field updated.'),

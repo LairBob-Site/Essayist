@@ -1,4 +1,4 @@
-/*   
+/*
 Theme Name: Essayist
 Theme URI: http://lairbob.com/
 Description: Theme based on Thematic
@@ -41,6 +41,9 @@ Tags: Thematic, LairBob, Essayist
 
 /* Apply basic sliding panel styles */
 @import url('sidebar.css');
+
+/* Apply basic sliding panel styles */
+@import url('main.css');
 
 /* Apply default theme styles and colors */
 /* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */

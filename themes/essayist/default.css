@@ -289,7 +289,7 @@ li.content-column {
 }
 .attachment-jpeg .main-aside,
 .attachment-png .main-aside {
-    display:none;    
+    display:none;
 }
 
 
@@ -329,6 +329,7 @@ li.content-column {
     border:1px solid #ccc;
     border-bottom:none;
     margin:0 0 18px 0;
+    width: 790px;
 }
 #comments-list li {
     background:#fafafa;
@@ -451,7 +452,7 @@ li.content-column {
 #form-allowed-tags p {
     color:#666;
     font-size:11px;
-    margin:0;    
+    margin:0;
 }
 #form-allowed-tags span {
     font-style:italic;
@@ -582,7 +583,7 @@ li.content-column {
     margin:0 0 22px 0;
 }
 .aside #searchsubmit {
-	display: none;	
+	display: none;
 }
 /*
     Main Asides
@@ -626,7 +627,7 @@ li.content-column {
     Footer Asides
 */
 #subsidiary {
-    padding:33px 0 0 0;    
+    padding:33px 0 0 0;
 }
 
 
