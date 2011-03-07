@@ -28,10 +28,11 @@
 .home-thumb {
     float: left;
     clear: left;
-    width: 100px;
-    height: 100px;
+/*    width: 100px;
+    height: 100px;*/
     margin-left: 10px;
     margin-bottom: 0;
+    overflow: auto;
 }
 
 .home-text {

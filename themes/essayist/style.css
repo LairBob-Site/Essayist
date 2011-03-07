@@ -18,31 +18,28 @@ Tags: Thematic, LairBob, Essayist
 /* Apply a basic layout */
 @import url('grid.css');
 
-/* Apply basic image styles */
-@import url('../thematic/library/styles/images.css');
-
-/* Apply basic entry styles */
+/* Apply entry styles */
 @import url('entry.css');
 
-/* Apply basic navigation styles */
-@import url('navigation.css');
-
-/* Apply basic sliding panel styles */
-@import url('slider.css');
-
-/* Apply basic sliding panel styles */
-@import url('summary.css');
-
-/* Apply basic sliding panel styles */
-@import url('reference.css');
-
-/* Apply basic sliding panel styles */
+/* Apply image styles */
 @import url('image.css');
 
-/* Apply basic sliding panel styles */
+/* Apply navigation styles */
+@import url('navigation.css');
+
+/* Apply sliding panel styles */
+@import url('slider.css');
+
+/* Apply summary / overview styles */
+@import url('summary.css');
+
+/* Apply quote / citation styles */
+@import url('reference.css');
+
+/* Apply basic sidebar styles */
 @import url('sidebar.css');
 
-/* Apply basic sliding panel styles */
+/* Apply homepage styles */
 @import url('main.css');
 
 /* Apply default theme styles and colors */
