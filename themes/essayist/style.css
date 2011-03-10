@@ -75,14 +75,17 @@ body, input, textarea, p, li {
 
 h1, h2, h4, h5 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+/*    font-family: 'Cambria', 'Georgia', 'Times New Roman', serif;*/
     font-weight: bolder;
+    letter-spacing: -1px;
 }
 
 h1 {
     padding-top: 0.5em;
     margin-bottom: 0.5em;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 36px;
 }
 
 h2 {

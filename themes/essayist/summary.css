@@ -159,3 +159,7 @@ body .summary {
     font-size: 17px;
 }
 
+h3+.summary {
+    font-size: 13px;
+    font-style: italic;
+}

@@ -33,9 +33,9 @@ body {
     margin: 0 0 0 -140px;
 }
 #content {
-    width:790px;
+    width:940px;
     overflow:hidden;
-    margin: 0 0 0 150px;
+/*    margin: 0 0 0 150px;*/
 }
 .hentry {
     width:790px;
@@ -51,7 +51,7 @@ body {
 #secondary {
     clear:left;
 }
-#footer {    
+#footer {
     clear:both;
 }
 #subsidiary {

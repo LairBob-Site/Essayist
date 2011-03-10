@@ -52,20 +52,31 @@ a:hover {
     padding:88px 0 44px 0;
 }
 #blog-title {
-    font-family: 'Helvetica Neue',sans-serif;
-    font-size:72px;
+    font-family: helvetica, arial, sans-serif;
+    color: #FFFFFF;
+/*    font-family: 'Helvetica Neue',sans-serif;*/
+    letter-spacing: -3px;
+/*    -webkit-text-stroke: 1px white;*/
+    font-size:128px;
     font-weight:900;
-    line-height:40px;
+    line-height: 128px;
+/*    line-height:40px;*/
+    -moz-transition: color 2s;
+    -webkit-transition: color 2s;
+    transition: color 2s;
 }
 #blog-title a {
-    color:#666;
+/*    color:#666;*/
+    color: #FFFFFF;
+    text-shadow: 2px 3px 3px #AAAAAA;
     text-decoration:none;
 }
 #blog-title a:active,
 #blog-title a:hover {
-    color: #999999;
+    color: #EEEEEE;
 }
 #blog-description {
+    font-family: helvetica, arial, sans-serif;
     color:#666;
     font-size:18px;
     font-weight: 300;

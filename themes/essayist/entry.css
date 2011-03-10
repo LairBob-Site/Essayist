@@ -21,6 +21,9 @@
     line-height:1em;
     padding:0 0 7px 0;
     text-align: left;
+    margin-left: 150px;
+    width: 790px;
+    letter-spacing: -1px;
 }
 .entry-title a {
     color:#000;
@@ -35,6 +38,7 @@
     font-size:13px;
     font-style:italic;
     line-height:18px;
+    margin-left: 150px;
 }
 .entry-meta .author {
 }
@@ -61,7 +65,9 @@
     text-transform:uppercase;
 }
 .entry-content {
-    padding:22px 0 0 0;
+    margin: 0 0 0 150px;
+    padding: 22px 0 0 0;
+    width: 790px;
 }
 
 .entry-content p {
@@ -69,7 +75,7 @@
     clear: left;
 }
 
-.entry-content h1+p::first-line, .summary+p::first-line  {
+.entry-content h1+p:first-line, .summary+p:first-line  {
     text-transform: uppercase;
 }
 
@@ -90,6 +96,16 @@
 }
 
 .entry-content h1 {
+    border-top: 2px solid #666666;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding: 16px 8px 16px 0;
+    text-align: left;
+}
+
+/*.entry-content h1 {
     margin-bottom: 0.5em;
     font-weight: bolder;
     border-radius: 5px;
@@ -112,7 +128,8 @@
     padding-top: 16px;
     padding-right: 8px;
     padding-bottom: 16px;
-}
+}*/
+
 .entry-content h2 {
     font-size:19px;
     font-weight:bold;
@@ -166,17 +183,13 @@ body .section-label {
     font-size: 11px;
     text-transform: uppercase;
     font-weight: 900;
-    color: #EEEEEE;
-    background: #08515F;
-    padding: 3px 8px 3px 8px;
+    color: #000000;
+    padding: 3px 0px 3px 8px;
     margin-top: 5em;
-    margin-bottom: 1em;
     text-align: right;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
     font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
 }
+
 
 /* Not sure if this is used any more */
 body .custom-type-label {
