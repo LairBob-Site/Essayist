@@ -13,7 +13,8 @@ jQuery(document).ready(function ($) {
         var windowHeight = $(window).height();
 
         if  (windowScrollTop  > contentTop)
-            $('#primary').css('top', windowScrollTop );
+            $('#primary').css( {"position":"absolute", "top": 25 } )
+            // $('#primary').css('top', windowScrollTop );
         else $('#primary').css('top', contentTop );
         // else if ((windowScrollTop+windowHeight) < (objectTop + objectHeight))
             // $('#primary').css('top', (windowScrollTop+windowHeight) - objectHeight);
