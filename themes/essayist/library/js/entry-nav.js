@@ -2,7 +2,10 @@
 jQuery(document).ready(function ($) {
     // $(primary).css('top', $(section-01).offset().top);
     // var primaryTop = jQuery(document).(primary);
-    $('#primary').localScroll();
+    $('#primary').localScroll( {
+        duration: 500,
+        easing: 'easeOutExpo'
+    } );
     // alert("Here");
 
     var offset = $('#primary').offset();
