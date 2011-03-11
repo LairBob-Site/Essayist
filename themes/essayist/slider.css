@@ -38,7 +38,7 @@ body .hackadelic-sliderButton {
     float:right;
     text-align:right;
     background-color: #FFFFFF;
-    border-bottom: 2px dotted #666666;
+    border-top: 2px dotted #666666;
     color: #333333;
 /*    box-shadow: 0 3px 2px #CCCCCC;*/
 }

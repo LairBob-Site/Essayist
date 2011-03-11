@@ -600,7 +600,7 @@ li.content-column {
     Main Asides
 */
 .main-aside ul {
-    padding:0 20px;
+    padding:0 5px;
 }
 .main-aside h3 {
 }
@@ -608,7 +608,7 @@ li.content-column {
     padding:0;
 }
 #primary {
-    border:1px solid #ccc;
+/*    border:1px solid #ccc;*/
     padding:18px 0 0 0;
     margin-bottom:22px;
 }

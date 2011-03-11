@@ -13,38 +13,38 @@ Tags: Thematic, LairBob, Essayist
 @import url('../thematic/library/styles/reset.css');
 
 /* Apply basic typography styles */
-@import url('typography.css');
+@import url('./library/styles/typography.css');
 
 /* Apply a basic layout */
-@import url('grid.css');
+@import url('./library/styles/grid.css');
 
 /* Apply entry styles */
-@import url('entry.css');
+@import url('./library/styles/entry.css');
 
 /* Apply image styles */
-@import url('image.css');
+@import url('./library/styles/image.css');
 
 /* Apply navigation styles */
-@import url('navigation.css');
+@import url('./library/styles/navigation.css');
 
 /* Apply sliding panel styles */
-@import url('slider.css');
+@import url('./library/styles/slider.css');
 
 /* Apply summary / overview styles */
-@import url('summary.css');
+@import url('./library/styles/summary.css');
 
 /* Apply quote / citation styles */
-@import url('reference.css');
+@import url('./library/styles/reference.css');
 
 /* Apply basic sidebar styles */
-@import url('sidebar.css');
+@import url('./library/styles/sidebar.css');
 
 /* Apply homepage styles */
-@import url('main.css');
+@import url('./library/styles/main.css');
 
 /* Apply default theme styles and colors */
 /* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
-@import url('default.css');
+@import url('./library/styles/default.css');
 
 /* Prepare theme for plugins */
 @import url('../thematic/library/styles/plugins.css');

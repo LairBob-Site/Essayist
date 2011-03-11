@@ -30,12 +30,12 @@ body {
 #container {
     width:940px;
     float:right;
-    margin: 0 0 0 -140px;
+    margin: 0 0 0 -150px;
 }
 #content {
-    width:940px;
+    width:790px;
     overflow:hidden;
-/*    margin: 0 0 0 150px;*/
+    margin: 0 0 0 150px;
 }
 .hentry {
     width:790px;
@@ -47,6 +47,7 @@ body {
 }
 #primary {
     float:left;
+    position: absolute; /* added to allow for "floating" nav widget */
 }
 #secondary {
     clear:left;

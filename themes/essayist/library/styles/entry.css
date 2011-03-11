@@ -21,7 +21,7 @@
     line-height:1em;
     padding:0 0 7px 0;
     text-align: left;
-    margin-left: 150px;
+/*    margin-left: 150px;*/
     width: 790px;
     letter-spacing: -1px;
 }
@@ -38,7 +38,7 @@
     font-size:13px;
     font-style:italic;
     line-height:18px;
-    margin-left: 150px;
+/*    margin-left: 150px;*/
 }
 .entry-meta .author {
 }
@@ -65,7 +65,7 @@
     text-transform:uppercase;
 }
 .entry-content {
-    margin: 0 0 0 150px;
+/*    margin: 0 0 0 150px;*/
     padding: 22px 0 0 0;
     width: 790px;
 }
@@ -163,6 +163,7 @@
 .entry-content embed {
     margin:0 0 22px 0;
 }
+
 .entry-utility {
     color:#666;
     font-size:13px;
