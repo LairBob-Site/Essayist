@@ -6,15 +6,20 @@ if (!is_admin()) { // instruction to only load if it is not the admin area
             get_stylesheet_directory_uri() . '/library/js/entry-nav.js',
             array('jquery')
     );
+    wp_register_script('easing',
+            get_stylesheet_directory_uri() . '/library/js/jquery.easing.1.3.js',
+            array('jquery')
+    );
     wp_register_script('scrollTo',
             get_stylesheet_directory_uri() . '/library/js/jquery.scrollTo.js',
-            array('jquery')
+            array('jquery', 'easing')
     );
     wp_register_script('localScroll',
             get_stylesheet_directory_uri() . '/library/js/jquery.localscroll.js',
             array('scrollTo')
     );
     // enqueue the script
+    wp_enqueue_script('easing');
     wp_enqueue_script('scrollTo');
     wp_enqueue_script('localScroll');
     wp_enqueue_script('navHandlers');

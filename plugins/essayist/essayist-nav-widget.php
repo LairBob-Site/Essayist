@@ -1,5 +1,12 @@
 <?php
 
+function buildDiv($currID, $currTitle) {
+    $strTemp = '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
+    return $strTemp;
+}
+
+
+
 class navTOCWidget extends WP_Widget {
 
     function navTOCWidget() {
@@ -12,9 +19,12 @@ class navTOCWidget extends WP_Widget {
 
         // $strTOC = '<div class="navLinks">';
         $strTOC = '';
-        $strTOC = $strTOC . '    <a href="#section-01">Context</a>' . "\n";
-        $strTOC = $strTOC . '    <a href="#section-02">Consequences</a>' . "\n";
-        $strTOC = $strTOC . '    <a href="#section-03">Conclusions</a>' . "\n";
+        $strTOC = $strTOC . buildDiv('section-01', 'Context');
+        $strTOC = $strTOC . buildDiv('section-02', 'Consequences');
+        $strTOC = $strTOC . buildDiv('section-03', 'Conclusions');
+        // $strTOC = $strTOC . '    <a href="#section-01">Context</a>' . "\n";
+        // $strTOC = $strTOC . '    <a href="#section-02">Consequences</a>' . "\n";
+        // $strTOC = $strTOC . '    <a href="#section-03">Conclusions</a>' . "\n";
         // $strTOC = $strToc . '</div>';
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
         // $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
