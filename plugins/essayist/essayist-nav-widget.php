@@ -3,26 +3,32 @@
 class navTOCWidget extends WP_Widget {
 
     function navTOCWidget() {
-        $widget_ops = array('classname' => 'widget_hello_world', 'description' => __("Example widget demoing WordPress 2.8 widget API"));
-        $control_ops = array('width' => 300, 'height' => 300);
+        $widget_ops = array('classname' => 'navTOCWidget', 'description' => __("Article Navigation Widget"));
         $this->WP_Widget('helloworld', __('Hello World Example'), $widget_ops, $control_ops);
     }
 
     function widget($args, $instance) {
         extract($args);
+
+        // $strTOC = '<div class="navLinks">';
+        $strTOC = '';
+        $strTOC = $strTOC . '    <a href="#section-01">Context</a>' . "\n";
+        $strTOC = $strTOC . '    <a href="#section-02">Consequences</a>' . "\n";
+        $strTOC = $strTOC . '    <a href="#section-03">Conclusions</a>' . "\n";
+        // $strTOC = $strToc . '</div>';
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
-        $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
-        $lineTwo = empty($instance['lineTwo']) ? 'World' : $instance['lineTwo'];
+        // $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
+        // $lineTwo = empty($instance['lineTwo']) ? 'World' : $instance['lineTwo'];
 
 # Before the widget
         echo $before_widget;
 
 # The title
-        if ($title)
-            echo $before_title . $title . $after_title;
+        // if ($title)
+            // echo $before_title . $title . $after_title;
 
 # Make the Hello World Example widget
-        echo '<div style="text-align:center;padding:10px;">' . $lineOne . '<br />' . $lineTwo . "</div>";
+        echo $strTOC;
 
 # After the widget
         echo $after_widget;

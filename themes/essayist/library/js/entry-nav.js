@@ -5,22 +5,13 @@ jQuery(document).ready(function ($) {
     $('#primary').localScroll();
     // alert("Here");
 
-    $(window).scroll(function(){
-        var objectTop = $('#primary').offset().top;
-        var contentTop = $('#content').offset().top;
-        var objectHeight = $('#primary').outerHeight();
-        var windowScrollTop = $(window).scrollTop();
-        var windowHeight = $(window).height();
+    var offset = $('#primary').offset();
 
-        if  (windowScrollTop  > contentTop)
-            $('#primary').css( {"position":"absolute", "top": 25 } )
-            // $('#primary').css('top', windowScrollTop );
-        else $('#primary').css('top', contentTop );
-        // else if ((windowScrollTop+windowHeight) < (objectTop + objectHeight))
-            // $('#primary').css('top', (windowScrollTop+windowHeight) - objectHeight);
+    $(window).scroll(function () {
+        var scrollTop = $(window).scrollTop(); // check the visible top of the browser
 
-        // $('#primary').html('Top: ' + $('#primary').position().top + 'px');
-
+        if (offset.top<scrollTop) $('#primary').addClass('fixed-nav');
+        else $('#primary').removeClass('fixed-nav');
     });
 })
 

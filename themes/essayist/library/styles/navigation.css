@@ -110,3 +110,8 @@
     text-align: right;
     font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
 }
+
+.fixed-nav {
+    position: fixed;
+    top: 20px;
+}

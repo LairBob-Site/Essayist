@@ -47,7 +47,7 @@ body {
 }
 #primary {
     float:left;
-    position: absolute; /* added to allow for "floating" nav widget */
+/*    position: absolute;  added to allow for "floating" nav widget */
 }
 #secondary {
     clear:left;
