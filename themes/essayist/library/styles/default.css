@@ -609,7 +609,8 @@ li.content-column {
 }
 #primary {
 /*    border:1px solid #ccc;*/
-    padding:18px 0 0 0;
+/*    padding:18px 0 0 0;*/
+    padding: none;
     margin-bottom:22px;
 }
 /*

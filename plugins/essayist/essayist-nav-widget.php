@@ -22,9 +22,11 @@ class navTOCWidget extends WP_Widget {
         extract($args);
 
         $strTOC = '';
+        $strTOC = $strTOC . $this->buildDiv('content', 'Top');
         $strTOC = $strTOC . $this->buildDiv('section-01', 'Context');
         $strTOC = $strTOC . $this->buildDiv('section-02', 'Consequences');
         $strTOC = $strTOC . $this->buildDiv('section-03', 'Conclusions');
+        $strTOC = $strTOC . $this->buildDiv('comments', 'Comments');
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
         // $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
         // $lineTwo = empty($instance['lineTwo']) ? 'World' : $instance['lineTwo'];

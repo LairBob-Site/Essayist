@@ -9,8 +9,8 @@ jQuery(document).ready(function ($) {
 
         $.scrollTo(
             destAnchor,
-            500,
-            { easing: 'easeOutExpo'}
+            750,
+            { easing: 'easeOutQuint'}
         );
     })
 
@@ -20,7 +20,9 @@ jQuery(document).ready(function ($) {
     $(window).scroll(function () {
         var scrollTop = $(window).scrollTop(); // check the visible top of the browser
 
-        if (offNav.top<scrollTop) $('#primary').addClass('fixed-nav');
-        else $('#primary').removeClass('fixed-nav');
+        if (offNav.top<scrollTop) {
+            // $('#primary').css( {top : offContent.top} );
+            $('#primary').addClass('fixed-nav');
+        } else $('#primary').removeClass('fixed-nav');
     });
 })
