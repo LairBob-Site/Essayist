@@ -1,12 +1,5 @@
 <?php
 
-function buildDiv($currID, $currTitle) {
-    $strTemp = '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
-    return $strTemp;
-}
-
-
-
 class navTOCWidget extends WP_Widget {
 
     function navTOCWidget() {
@@ -14,18 +7,24 @@ class navTOCWidget extends WP_Widget {
         $this->WP_Widget('helloworld', __('Hello World Example'), $widget_ops, $control_ops);
     }
 
+    function buildDiv($currID, $currTitle) {
+        // $strTemp = '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
+        // $strLoc = 'onclick="location.href=\'#' . $currID . '\';';
+        // $strTemp = '<div class="nav-section-label" onclick="$.scrollTo(&apos;#' . $currID . '&apos;), 500,{ easing: &apos;easeOutExpo&apos; } )">' . "\n";
+        $strTemp = '<div class="nav-section-label" id="nav-' . $currID . '" dest="' . $currID . '">' . "\n";
+        // $strTemp = $strTemp . '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
+        $strTemp = $strTemp . '      ' . $currTitle . "\n";
+        $strTemp = $strTemp . '</div>' . "\n \n";
+        return $strTemp;
+    }
+
     function widget($args, $instance) {
         extract($args);
 
-        // $strTOC = '<div class="navLinks">';
         $strTOC = '';
-        $strTOC = $strTOC . buildDiv('section-01', 'Context');
-        $strTOC = $strTOC . buildDiv('section-02', 'Consequences');
-        $strTOC = $strTOC . buildDiv('section-03', 'Conclusions');
-        // $strTOC = $strTOC . '    <a href="#section-01">Context</a>' . "\n";
-        // $strTOC = $strTOC . '    <a href="#section-02">Consequences</a>' . "\n";
-        // $strTOC = $strTOC . '    <a href="#section-03">Conclusions</a>' . "\n";
-        // $strTOC = $strToc . '</div>';
+        $strTOC = $strTOC . $this->buildDiv('section-01', 'Context');
+        $strTOC = $strTOC . $this->buildDiv('section-02', 'Consequences');
+        $strTOC = $strTOC . $this->buildDiv('section-03', 'Conclusions');
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
         // $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
         // $lineTwo = empty($instance['lineTwo']) ? 'World' : $instance['lineTwo'];

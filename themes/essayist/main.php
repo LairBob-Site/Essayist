@@ -92,7 +92,7 @@ Template Name: Main Page
     thematic_belowcontainer();
 
     // calling the standard sidebar
-    thematic_sidebar();
+    // thematic_sidebar();
 
     // calling footer.php
     get_footer();
