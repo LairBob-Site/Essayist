@@ -109,12 +109,12 @@
     width: 120px;
     text-align: right;
     color: #000000;
-    padding: 3px 0px 3px 8px;
+    padding: 3px 0px 3px 0px;
     margin-right: 10px;
     margin-top: 0.5em;
     text-align: right;
     font-size: 11px;
-    font-weight: 900;
+    font-weight: normal;
     font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
 }
 
@@ -124,9 +124,11 @@
 }
 
 .nav-section-label:first-child {
+    color: #999999;
     border-bottom: 1px dashed #AAAAAA;
 }
 .nav-section-label:last-child {
+    color: #999999;
     border-top: 1px dashed #AAAAAA;
 }
 
