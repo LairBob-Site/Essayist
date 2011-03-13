@@ -119,7 +119,17 @@
 }
 
 .nav-section-label:hover {
-    background-color: #EEEEEE;
+    /* Firefox */
+    background: -moz-linear-gradient( left, rgba(238,238,238,1), rgba(255,255,255,1) );
+
+    /* Chrome & Safari */
+    background: -webkit-gradient( linear, left top, right top, color-stop( 0, rgba(238,238,238,1) ), color-stop( 1, rgba(255,255,255,1) ) );
+
+    /* IE5.5 - IE7 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF);
+
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF)";
     cursor: pointer;
 }
 
