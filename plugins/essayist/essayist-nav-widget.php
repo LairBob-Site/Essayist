@@ -1,5 +1,35 @@
 <?php
 
+function trimLeft($currHaystack, $currNeedle) {
+    $posNeedle = strpos($currHaystack, $currNeedle);
+
+    if (strpos > 1) {
+        return substr($currHaystack, (-1 * (strlen($currHaystack) - $posNeedle)) );
+    } else {
+        return 'L';
+        // return 'ERROR (LEFT TRIM): Could not find "' .  $currNeedle . '" in "' . $currHaystack . '"';
+    }
+}
+
+function trimRight($currHaystack, $currNeedle) {
+    $posNeedle = strpos($currHaystack, $currNeedle);
+
+    if (strpos > 1) {
+        return substr($currHaystack, $posNeedle );
+    } else {
+        return 'R';
+        // return 'ERROR (RIGHT TRIM): Could not find "' .  $currNeedle . '" in "' . $currHaystack . '"';
+    }
+}
+
+function findAttr($currString, $currAttr) {
+    $posAttr = strpos($currString, $currAttr);
+    $strTemp = trimLeft($currString, $currAttr);
+    $strTemp = trimLeft($strTemp, '"');
+    $strTemp = trimRight($strTemp, '"');
+    return $strTemp;
+}
+
 class navTOCWidget extends WP_Widget {
 
     function navTOCWidget() {
@@ -8,28 +38,46 @@ class navTOCWidget extends WP_Widget {
     }
 
     function buildDiv($currID, $currTitle) {
-        // $strTemp = '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
-        // $strLoc = 'onclick="location.href=\'#' . $currID . '\';';
-        // $strTemp = '<div class="nav-section-label" onclick="$.scrollTo(&apos;#' . $currID . '&apos;), 500,{ easing: &apos;easeOutExpo&apos; } )">' . "\n";
         $strTemp = '<div class="nav-section-label" id="nav-' . $currID . '" dest="' . $currID . '">' . "\n";
-        // $strTemp = $strTemp . '      <a href ="#' . $currID . '">' . $currTitle . '</a>' . "\n";
         $strTemp = $strTemp . '      ' . $currTitle . "\n";
         $strTemp = $strTemp . '</div>' . "\n \n";
         return $strTemp;
     }
 
+    function findInfo($currDiv) {
+        // $posIDEnd = strpos($currDiv, '"', $posIDStart + 1);
+        // $strTemp = substr($currDiv, $posID, ($posIDEnd - $posIDStart + 1));
+        return findAttr($currDiv, "id");
+    }
+
+    function scanContent() {
+        global $post;
+
+        $strContent = $post->post_content;
+        $strContent = do_shortcode($strContent);
+
+        $doc = new DOMDocument();
+        $doc->loadHTML(do_shortcode($post->post_content));
+        $divs = $doc->getElementsByTagName('div');
+
+        $strTOC = $this->buildDiv('content', 'Top');
+        foreach($divs as $div) {
+            if ($div->hasAttribute('class')) {
+                if (strpos($div->getAttribute('class'), 'nav-content-section') !== false) {
+                    $strTOC = $strTOC . $this->buildDiv($div->getAttribute('id'), $div->getAttribute('title'));
+                }
+            }
+        }
+
+        $strTOC = $strTOC . $this->buildDiv('comments', 'Comments');
+
+        return ($strTOC);
+    }
+
     function widget($args, $instance) {
         extract($args);
 
-        $strTOC = '';
-        $strTOC = $strTOC . $this->buildDiv('content', 'Top');
-        $strTOC = $strTOC . $this->buildDiv('section-01', 'Context');
-        $strTOC = $strTOC . $this->buildDiv('section-02', 'Consequences');
-        $strTOC = $strTOC . $this->buildDiv('section-03', 'Conclusions');
-        $strTOC = $strTOC . $this->buildDiv('comments', 'Comments');
         $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
-        // $lineOne = empty($instance['lineOne']) ? 'Hello' : $instance['lineOne'];
-        // $lineTwo = empty($instance['lineTwo']) ? 'World' : $instance['lineTwo'];
 
 # Before the widget
         echo $before_widget;
@@ -39,7 +87,7 @@ class navTOCWidget extends WP_Widget {
             // echo $before_title . $title . $after_title;
 
 # Make the Hello World Example widget
-        echo $strTOC;
+        echo $this->scanContent();
 
 # After the widget
         echo $after_widget;
