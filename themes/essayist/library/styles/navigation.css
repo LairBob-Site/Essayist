@@ -144,5 +144,12 @@
 
 .fixed-nav {
     position: fixed;
+    /* This 'top' value is the number of pixels below the top of the visible window where it will be positioned */
+    /* This needs to match the number that is subtracted from the offset in "entry-nav.js" */
+    top: 50px;
+}
+
+.fixed-menu {
+    position: fixed;
     top: 0px;
 }

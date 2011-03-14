@@ -54,16 +54,20 @@ a:hover {
 #blog-title {
     font-family: helvetica, arial, sans-serif;
     color: #FFFFFF;
+    -moz-transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
 /*    font-family: 'Helvetica Neue',sans-serif;*/
     letter-spacing: -3px;
 /*    -webkit-text-stroke: 1px white;*/
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#AAAAAA')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#AAAAAA');
     font-size:128px;
     font-weight:900;
     line-height: 128px;
 /*    line-height:40px;*/
-    -moz-transition: color 2s;
-    -webkit-transition: color 2s;
-    transition: color 2s;
 }
 #blog-title a {
 /*    color:#666;*/
@@ -73,6 +77,9 @@ a:hover {
 }
 #blog-title a:active,
 #blog-title a:hover {
+    -moz-transition: color 0.25s;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
     color: #EEEEEE;
 }
 #blog-description {
@@ -90,7 +97,7 @@ a:hover {
     display:none;
 }
 #access {
-    border-bottom:1px solid #ccc;
+/*    border-bottom:1px solid #ccc;*/
     height:32px;
     font-size:13px;
     overflow:visible;
@@ -151,20 +158,26 @@ ul.sf-menu li li li.sfHover ul {
 
 /*** THEMATIC SKIN ***/
 .sf-menu {
-    border-right:1px solid #ccc;
-	float:left;
+/*    border-right:1px solid #ccc;*/
+    float:left;
+    width: 940px;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 2px solid #CCCCCC;
+    z-index: 5;
 }
 .sf-menu a {
-	border-left:1px solid #ccc;
+/*	border-left:1px solid #ccc;
 	border-top:1px solid #ccc;
-	border-bottom:1px solid #ccc;
+	border-bottom:1px solid #ccc;*/
 	padding:9px 13px;
 	text-decoration:none;
 }
 .sf-menu .current_page_item a,
 .sf-menu .current_page_ancestor a,
 .sf-menu .current_page_parent a {
-    border-bottom-color:#fff;
+/*    border-bottom-color:#fff;*/
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
 	color:			#666;
@@ -185,8 +198,8 @@ ul.sf-menu li li li.sfHover ul {
     border-bottom-color:#ccc;
 }
 .sf-menu ul {
-    border-right:1px solid #ccc;
-    border-bottom:1px solid #ccc;
+/*    border-right:1px solid #ccc;
+    border-bottom:1px solid #ccc;*/
 }
 .sf-menu li:hover ul,
 .sf-menu li.sfHover ul {
