@@ -60,19 +60,15 @@ a:active, a hover {
   font-weight: 900;
   line-height: 128px;
   /*    line-height:40px;*/ }
-
-#blog-title a {
-  /*    color:#666;*/
-  color: #FFFFFF;
-  text-shadow: 2px 3px 3px #AAAAAA;
-  text-decoration: none; }
-
-#blog-title a:active,
-#blog-title a:hover {
-  -moz-transition: color 0.25s;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-  color: #EEEEEE; }
+  #blog-title a {
+    color: #FFFFFF;
+    text-shadow: 2px 3px 3px #AAAAAA;
+    text-decoration: none; }
+  #blog-title:active, #blog-title:hover {
+    -moz-transition: color 0.25s;
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+    color: #EEEEEE; }
 
 #blog-description {
   font-family: helvetica, arial, sans-serif;
@@ -227,14 +223,10 @@ ul.sf-menu li li li.sfHover ul {
 .page-title a {
   color: #666;
   text-decoration: none; }
-
-.page-title a:active,
-.page-title a:hover {
-  color: #FF4B33; }
-
+  .page-title a:active, .page-title a:hover {
+    color: #FF4B33; }
 .page-title span {
   font-style: italic; }
-
 .page-title .meta-nav {
   font-style: normal; }
 
