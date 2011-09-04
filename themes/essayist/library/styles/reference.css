@@ -1,6 +1,6 @@
 /* Quotations
 ------------------------------------------ */
-body .quotation, .sidenote {
+body .quotation, body .sidenote {
   float: right;
   position: relative;
   clear: none;
@@ -10,10 +10,8 @@ body .quotation, .sidenote {
   color: #808080;
   line-height: 1.4;
   font-family: Cambria,'Times New Roman',serif; }
-
 body .sidenote-title {
   font-weight: bold; }
-
 body .quot_attrib {
   clear: none;
   margin: 0;
@@ -21,7 +19,6 @@ body .quot_attrib {
   text-align: right;
   font-style: italic;
   font-family: Cambria,'Times New Roman',serif; }
-
 body .quot_source {
   text-decoration: underline;
   font-family: Cambria,'Times New Roman',serif; }

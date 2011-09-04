@@ -14,18 +14,14 @@
   line-height: 18px;
   margin: 0px 0 22px 0;
   overflow: hidden; }
-
-.navigation a {
-  color: #666;
-  font-style: italic;
-  text-decoration: none; }
-
-.navigation a:active,
-.navigation a:hover {
-  color: #FF4B33; }
-
-.navigation .meta-nav {
-  font-style: normal; }
+  .navigation a, .navigation .wp-pagenavi span, .wp-pagenavi .navigation span {
+    color: #666;
+    font-style: italic;
+    text-decoration: none; }
+    .navigation a:active, .navigation .wp-pagenavi span:active, .wp-pagenavi .navigation span:active, .navigation a:hover, .navigation .wp-pagenavi span:hover, .wp-pagenavi .navigation span:hover {
+      color: #FF4B33; }
+  .navigation .meta-nav {
+    font-style: normal; }
 
 .nav-previous {
   float: left;
@@ -52,47 +48,40 @@
 .wp-pagenavi {
   margin: 0 0 0 -0.5em;
   padding: 0.5em 0; }
+  .wp-pagenavi a, .wp-pagenavi span {
+    border: 1px solid #cccccc !important;
+    color: #cccccc !important;
+    font-style: normal;
+    margin: 0 .375em !important;
+    padding: 0.5em 0.25em !important; }
+    .wp-pagenavi a:visited, .wp-pagenavi span:visited {
+      border: 1px solid #cccccc !important;
+      color: #666 !important; }
+    .wp-pagenavi a:hover, .wp-pagenavi span:hover {
+      border: 1px solid #cccccc !important;
+      color: #FF4B33 !important; }
+    .wp-pagenavi a:active, .wp-pagenavi span:active {
+      border: 1px solid #cccccc !important;
+      color: #FF4B33 !important; }
+  .wp-pagenavi span .pages {
+    border: none !important;
+    color: #666 !important;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .wp-pagenavi span .current {
+    border: none !important;
+    color: #666 !important;
+    font-weight: normal !important;
+    margin: 0 !important;
+    padding: 0 !important; }
+  .wp-pagenavi span .extend {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    color: #000000;
+    margin: 2px;
+    padding: 2px 4px; }
 
-.wp-pagenavi a, .wp-pagenavi a:link, .wp-pagenavi span {
-  border: 1px solid #ccc !important;
-  color: #666!important;
-  font-style: normal;
-  margin: 0 .375em !important;
-  padding: 0.5em 0.25em !important; }
-
-.wp-pagenavi a:visited {
-  border: 1px solid #ccc !important;
-  color: #666 !important; }
-
-.wp-pagenavi a:hover {
-  border: 1px solid #ccc !important;
-  color: #FF4B33 !important; }
-
-.wp-pagenavi a:active {
-  border: 1px solid #ccc !important;
-  color: #FF4B33 !important; }
-
-.wp-pagenavi span.pages {
-  border: none !important;
-  color: #666 !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-
-.wp-pagenavi span.current {
-  border: none !important;
-  color: #666 !important;
-  font-weight: normal !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-
-.wp-pagenavi span.extend {
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
-  color: #000000;
-  margin: 2px;
-  padding: 2px 4px; }
-
-.navTOCWidget a {
+.navTOCWidget a, .navTOCWidget .wp-pagenavi span, .wp-pagenavi .navTOCWidget span {
   text-decoration: none; }
 
 .nav-section-label {
@@ -107,25 +96,22 @@
   font-size: 11px;
   font-weight: normal;
   font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif; }
-
-.nav-section-label:hover {
-  /* Firefox */
-  background: -moz-linear-gradient(left, #eeeeee, white);
-  /* Chrome & Safari */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0, #eeeeee), color-stop(1, white));
-  /* IE5.5 - IE7 */
-  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF);
-  /* IE8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF)";
-  cursor: pointer; }
-
-.nav-section-label:first-child {
-  color: #999999;
-  border-bottom: 1px dashed #AAAAAA; }
-
-.nav-section-label:last-child {
-  color: #999999;
-  border-top: 1px dashed #AAAAAA; }
+  .nav-section-label:hover {
+    /* Firefox */
+    background: -moz-linear-gradient(left, #eeeeee, white);
+    /* Chrome & Safari */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #eeeeee), color-stop(1, white));
+    /* IE5.5 - IE7 */
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF);
+    /* IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF)";
+    cursor: pointer; }
+  .nav-section-label:first-child {
+    color: #999999;
+    border-bottom: 1px dashed #AAAAAA; }
+  .nav-section-label:last-child {
+    color: #999999;
+    border-top: 1px dashed #AAAAAA; }
 
 .fixed-nav {
   position: fixed;
