@@ -257,18 +257,16 @@ ul.sf-menu li li li.sfHover ul {
     margin:0 0 22px 0;
     padding:22px 0 0 0;
     word-spacing:0.5em;
+    a {
+        border:1px solid #ccc;
+        color:#666;
+        font-weight:normal;
+        padding:0.5em 0.75em;
+        text-decoration:none;
+        &:active, &:hover { color: #FF4B33; }
+    }
 }
-.page-link a {
-    border:1px solid #ccc;
-    color:#666;
-    font-weight:normal;
-    padding:0.5em 0.75em;
-    text-decoration:none;
-}
-.page-link a:active,
-.page-link a:hover {
-    color: #FF4B33;
-}
+
 ul#links-page,
 ul#archives-page {
     list-style:none;

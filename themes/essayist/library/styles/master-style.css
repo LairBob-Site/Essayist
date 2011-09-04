@@ -12,25 +12,18 @@ This work, like WordPress, is released under GNU General Public License, version
 http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 .
 */
-
 /* Reset browser defaults */
 @import url('library/styles/reset.css');
-
 /* Apply basic typography styles */
 @import url('library/styles/typography.css');
-
 /* Apply a basic layout */
 @import url('library/layouts/2c-r-fixed.css');
-
 /* Apply basic image styles */
 @import url('library/styles/images.css');
-
 /* Apply default theme styles and colors */
 @import url('library/styles/default.css');
-
 /* Prepare theme for plugins */
 @import url('library/styles/plugins.css');
-
 /* -------------------------------------------------------------- 
    
    Default styles for Images
@@ -45,47 +38,46 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
    
    Cheers. --Ian Stewart
   
--------------------------------------------------------------- */   
-
+-------------------------------------------------------------- */
 .entry-content img {
-    margin: 0 0 18px 0;
-    max-width:100%;
-}
+  margin: 0 0 18px 0;
+  max-width: 100%; }
+
 .alignleft,
 img.alignleft {
-	float: left;
-    margin-right:20px;
-}
+  float: left;
+  margin-right: 20px; }
+
 .alignright,
 img.alignright {
-	display: block;
-	float: right;
-    margin-left:20px;
-}
+  display: block;
+  float: right;
+  margin-left: 20px; }
+
 .aligncenter,
 img.aligncenter {
-	margin-left:auto;
-	margin-right:auto;
-	display: block;
-	clear: both;
-}
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  clear: both; }
+
 .wp-caption {
-	text-align: center;
-	margin-bottom:18px;
-}
+  text-align: center;
+  margin-bottom: 18px; }
+
 .wp-caption img {
-	margin: 0;
-	padding: 0;
-	border: 0 none;
-}
+  margin: 0;
+  padding: 0;
+  border: 0 none; }
+
 .wp-caption p.wp-caption-text {
-	margin: 0;
-	padding:5px;
-}
+  margin: 0;
+  padding: 5px; }
+
 .gallery img {
-    margin:0;
-}
-.wp-smiley { /* Prevent the smileys from breaking line-height */
-	max-height:12px;
-	margin:0 !important;
-}
+  margin: 0; }
+
+.wp-smiley {
+  /* Prevent the smileys from breaking line-height */
+  max-height: 12px;
+  margin: 0 !important; }

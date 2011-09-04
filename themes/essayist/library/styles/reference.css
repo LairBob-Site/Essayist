@@ -1,33 +1,27 @@
 /* Quotations
 ------------------------------------------ */
 body .quotation, .sidenote {
-    float: right;
-    position: relative;
-    clear:none;
-    width: 300px;
-    margin: 0;
-    padding: 0;
-    color: #808080;
-    line-height: 1.4;
-    font-family: Cambria,'Times New Roman',serif;
-
-}
+  float: right;
+  position: relative;
+  clear: none;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  color: #808080;
+  line-height: 1.4;
+  font-family: Cambria,'Times New Roman',serif; }
 
 body .sidenote-title {
-    font-weight: bold;
-}
+  font-weight: bold; }
 
 body .quot_attrib {
-    clear:none;
-    margin: 0;
-    padding: 0;
-    text-align:right;
-    font-style: italic;
-    font-family: Cambria,'Times New Roman',serif;
-}
+  clear: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-style: italic;
+  font-family: Cambria,'Times New Roman',serif; }
 
 body .quot_source {
-    text-decoration: underline;
-    font-family: Cambria,'Times New Roman',serif;
-}
-
+  text-decoration: underline;
+  font-family: Cambria,'Times New Roman',serif; }

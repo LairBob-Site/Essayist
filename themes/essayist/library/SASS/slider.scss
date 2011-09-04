@@ -1,0 +1,62 @@
+/* Sliding Panels
+------------------------------------------ */
+
+
+body .hackadelic-sliderPanel {
+    z-index: 1;
+    float: right;
+    position: relative;
+    clear:right;
+    width: 290px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+body .hackadelic-sliderPanel p {
+    line-height: 1.4;
+    font-family: Cambria,'Times New Roman',serif;
+    margin-top: 0;
+    width: auto;
+}
+
+body .hackadelic-sliderPanel li{
+    width: 260px;
+    line-height: 1.4;
+    font-family: Cambria,'Times New Roman',serif;
+    margin-top: 0;
+}
+
+body .hackadelic-sliderButton {
+    z-index: 2;
+    font-size: 12.5px;
+    width: 310px;
+    position: relative;
+    float:right;
+    text-align:right;
+    background-color: #FFFFFF;
+    border-top: 2px dotted #666666;
+    color: #333333;
+/*    box-shadow: 0 3px 2px #CCCCCC;*/
+}
+
+.hackadelic-sliderButton:after {
+    content: "  " url(http://lairbob.com/wp-content/themes/essayist/images/nav/dropdown-arrow.jpg);
+}
+
+a.hackadelic-sliderButton {
+    color: #F0F0F0;
+    text-decoration: none;
+    padding: 3px 0px 1px;
+}
+a.hackadelic-sliderButton:hover {
+    background-color: #EEEEEE;
+    color:#004B91;
+}
+.entry .hackadelic-sliderPanel {
+    /* font-size:90%;
+    background-color: #fcfcfc; */
+}
