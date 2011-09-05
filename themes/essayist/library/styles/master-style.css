@@ -24,6 +24,9 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 @import url('library/styles/default.css');
 /* Prepare theme for plugins */
 @import url('library/styles/plugins.css');
+/* Prepare theme for Compass / Blueprint integration */
+@import url('library/styles/print.css');
+@import url('library/styles/screen.css');
 /* -------------------------------------------------------------- 
    
    Default styles for Images
@@ -39,45 +42,63 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
    Cheers. --Ian Stewart
   
 -------------------------------------------------------------- */
+/* line 54, ../sass/master-style.scss */
 .entry-content img {
   margin: 0 0 18px 0;
-  max-width: 100%; }
+  max-width: 100%;
+}
 
+/* line 59, ../sass/master-style.scss */
 .alignleft,
 img.alignleft {
   float: left;
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
+/* line 64, ../sass/master-style.scss */
 .alignright,
 img.alignright {
   display: block;
   float: right;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
+/* line 70, ../sass/master-style.scss */
 .aligncenter,
 img.aligncenter {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  clear: both; }
+  clear: both;
+}
 
+/* line 76, ../sass/master-style.scss */
 .wp-caption {
   text-align: center;
-  margin-bottom: 18px; }
+  margin-bottom: 18px;
+}
 
+/* line 80, ../sass/master-style.scss */
 .wp-caption img {
   margin: 0;
   padding: 0;
-  border: 0 none; }
+  border: 0 none;
+}
 
+/* line 85, ../sass/master-style.scss */
 .wp-caption p.wp-caption-text {
   margin: 0;
-  padding: 5px; }
+  padding: 5px;
+}
 
+/* line 89, ../sass/master-style.scss */
 .gallery img {
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 92, ../sass/master-style.scss */
 .wp-smiley {
   /* Prevent the smileys from breaking line-height */
   max-height: 12px;
-  margin: 0 !important; }
+  margin: 0 !important;
+}

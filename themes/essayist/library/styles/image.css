@@ -1,84 +1,116 @@
 /* Inline images
 ------------------------------------------ */
+/* line 4, ../sass/image.scss */
 body .size-full {
   margin-top: 1em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
+/* line 9, ../sass/image.scss */
 body .screen-grab {
   padding-top: 1em;
   padding-bottom: 1em;
   border-top: 2px dotted #e5e5e5;
-  border-bottom: 2px dotted #e5e5e5; }
+  border-bottom: 2px dotted #e5e5e5;
+}
+/* line 16, ../sass/image.scss */
 body .wp-caption {
   width: 460px;
-  border: none; }
+  border: none;
+}
+/* line 21, ../sass/image.scss */
 body .wp-caption-text {
   font-size: 0.9em;
   font-style: italic;
-  margin: 0; }
+  margin: 0;
+}
 
 /* --------------------------------------------------------------
 
    Default styles for Images
 
 -------------------------------------------------------------- */
+/* line 35, ../sass/image.scss */
 .entry-content .wp-post-image {
   border: 1px solid #ccc;
   float: right;
   margin: 0 0 20px 18px;
-  padding: 5px; }
+  padding: 5px;
+}
+/* line 41, ../sass/image.scss */
 .entry-content img {
   margin: 0 0 18px 0;
   max-width: 460px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
+/* line 50, ../sass/image.scss */
 .alignleft,
 img.alignleft {
   float: left;
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
+/* line 55, ../sass/image.scss */
 .alignright,
 img.alignright {
   display: block;
   float: right;
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 
+/* line 61, ../sass/image.scss */
 .aligncenter,
 img.aligncenter {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  clear: both; }
+  clear: both;
+}
 
+/* line 67, ../sass/image.scss */
 .wp-caption {
   border: 1px solid #ccc;
   text-align: center;
   margin-bottom: 18px;
-  padding: 9px 5px 0; }
+  padding: 9px 5px 0;
+}
 
+/* line 73, ../sass/image.scss */
 .wp-caption img {
   border: 1px solid #ccc;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
+/* line 78, ../sass/image.scss */
 .wp-caption p.wp-caption-text {
   margin: 0;
-  padding: 18px 5px; }
+  padding: 18px 5px;
+}
 
+/* line 82, ../sass/image.scss */
 .gallery-icon {
   border: 1px solid #ccc;
   margin: 0 5px;
-  padding-top: 6px; }
+  padding-top: 6px;
+}
 
+/* line 87, ../sass/image.scss */
 .gallery img {
-  margin: 0; }
+  margin: 0;
+}
 
+/* line 90, ../sass/image.scss */
 .gallery-caption {
-  padding: 6px 6px 0; }
+  padding: 6px 6px 0;
+}
 
+/* line 93, ../sass/image.scss */
 .wp-smiley {
   /* Prevent the smileys from breaking line-height */
   max-height: 12px;
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
 /*
 

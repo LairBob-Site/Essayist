@@ -1,89 +1,128 @@
+/* line 1, ../sass/navigation.scss */
 .navBlock {
   clear: none;
   position: absolute;
   margin-left: 0;
   width: 140px;
   min-height: 50px;
-  border: 1px solid blue; }
+  border: 1px solid blue;
+}
 
 /* =Navigation
 -------------------------------------------------------------- */
+/* line 15, ../sass/navigation.scss */
 .navigation {
   color: #666;
   font-size: 13px;
   line-height: 18px;
   margin: 0px 0 22px 0;
-  overflow: hidden; }
-  .navigation a, .navigation .wp-pagenavi span, .wp-pagenavi .navigation span {
-    color: #666;
-    font-style: italic;
-    text-decoration: none; }
-    .navigation a:active, .navigation .wp-pagenavi span:active, .wp-pagenavi .navigation span:active, .navigation a:hover, .navigation .wp-pagenavi span:hover, .wp-pagenavi .navigation span:hover {
-      color: #FF4B33; }
-  .navigation .meta-nav {
-    font-style: normal; }
+  overflow: hidden;
+}
+/* line 21, ../sass/navigation.scss */
+.navigation a, .navigation .wp-pagenavi span, .wp-pagenavi .navigation span {
+  color: #666;
+  font-style: italic;
+  text-decoration: none;
+}
+/* line 25, ../sass/navigation.scss */
+.navigation a:active, .navigation .wp-pagenavi span:active, .wp-pagenavi .navigation span:active, .navigation a:hover, .navigation .wp-pagenavi span:hover, .wp-pagenavi .navigation span:hover {
+  color: #FF4B33;
+}
+/* line 28, ../sass/navigation.scss */
+.navigation .meta-nav {
+  font-style: normal;
+}
 
+/* line 33, ../sass/navigation.scss */
 .nav-previous {
   float: left;
-  width: 50%; }
+  width: 50%;
+}
 
+/* line 37, ../sass/navigation.scss */
 .nav-next {
   float: right;
   width: 50%;
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 43, ../sass/navigation.scss */
 #nav-above, #nav-below {
-  width: 100%; }
+  width: 100%;
+}
 
+/* line 46, ../sass/navigation.scss */
 #nav-above {
-  display: none; }
+  display: none;
+}
 
+/* line 49, ../sass/navigation.scss */
 .paged #nav-above {
   display: block;
-  padding: 0 0 44px 0; }
+  padding: 0 0 44px 0;
+}
 
 /* =PageNavi
 -------------------------------------------------------------- */
 /* Using !important to override PageNavi CSS */
+/* line 59, ../sass/navigation.scss */
 .wp-pagenavi {
   margin: 0 0 0 -0.5em;
-  padding: 0.5em 0; }
-  .wp-pagenavi a, .wp-pagenavi span {
-    border: 1px solid #cccccc !important;
-    color: #cccccc !important;
-    font-style: normal;
-    margin: 0 .375em !important;
-    padding: 0.5em 0.25em !important; }
-    .wp-pagenavi a:visited, .wp-pagenavi span:visited {
-      border: 1px solid #cccccc !important;
-      color: #666 !important; }
-    .wp-pagenavi a:hover, .wp-pagenavi span:hover {
-      border: 1px solid #cccccc !important;
-      color: #FF4B33 !important; }
-    .wp-pagenavi a:active, .wp-pagenavi span:active {
-      border: 1px solid #cccccc !important;
-      color: #FF4B33 !important; }
-  .wp-pagenavi span .pages {
-    border: none !important;
-    color: #666 !important;
-    margin: 0 !important;
-    padding: 0 !important; }
-  .wp-pagenavi span .current {
-    border: none !important;
-    color: #666 !important;
-    font-weight: normal !important;
-    margin: 0 !important;
-    padding: 0 !important; }
-  .wp-pagenavi span .extend {
-    background-color: #FFFFFF;
-    border: 1px solid #000000;
-    color: #000000;
-    margin: 2px;
-    padding: 2px 4px; }
+  padding: 0.5em 0;
+}
+/* line 67, ../sass/navigation.scss */
+.wp-pagenavi a, .wp-pagenavi span {
+  border: 1px solid #cccccc !important;
+  color: #cccccc !important;
+  font-style: normal;
+  margin: 0 .375em !important;
+  padding: 0.5em 0.25em !important;
+}
+/* line 73, ../sass/navigation.scss */
+.wp-pagenavi a:visited, .wp-pagenavi span:visited {
+  border: 1px solid #cccccc !important;
+  color: #666 !important;
+}
+/* line 77, ../sass/navigation.scss */
+.wp-pagenavi a:hover, .wp-pagenavi span:hover {
+  border: 1px solid #cccccc !important;
+  color: #FF4B33 !important;
+}
+/* line 81, ../sass/navigation.scss */
+.wp-pagenavi a:active, .wp-pagenavi span:active {
+  border: 1px solid #cccccc !important;
+  color: #FF4B33 !important;
+}
+/* line 90, ../sass/navigation.scss */
+.wp-pagenavi span .pages {
+  border: none !important;
+  color: #666 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 96, ../sass/navigation.scss */
+.wp-pagenavi span .current {
+  border: none !important;
+  color: #666 !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 103, ../sass/navigation.scss */
+.wp-pagenavi span .extend {
+  background-color: #FFFFFF;
+  border: 1px solid #000000;
+  color: #000000;
+  margin: 2px;
+  padding: 2px 4px;
+}
 
+/* line 113, ../sass/navigation.scss */
 .navTOCWidget a, .navTOCWidget .wp-pagenavi span, .wp-pagenavi .navTOCWidget span {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
+/* line 117, ../sass/navigation.scss */
 .nav-section-label {
   text-transform: uppercase;
   width: 120px;
@@ -95,30 +134,41 @@
   text-align: right;
   font-size: 11px;
   font-weight: normal;
-  font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif; }
-  .nav-section-label:hover {
-    /* Firefox */
-    background: -moz-linear-gradient(left, #eeeeee, white);
-    /* Chrome & Safari */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, #eeeeee), color-stop(1, white));
-    /* IE5.5 - IE7 */
-    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF);
-    /* IE8 */
-    -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF)";
-    cursor: pointer; }
-  .nav-section-label:first-child {
-    color: #999999;
-    border-bottom: 1px dashed #AAAAAA; }
-  .nav-section-label:last-child {
-    color: #999999;
-    border-top: 1px dashed #AAAAAA; }
+  font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
+}
+/* line 130, ../sass/navigation.scss */
+.nav-section-label:hover {
+  /* Firefox */
+  background: -moz-linear-gradient(left, #eeeeee, white);
+  /* Chrome & Safari */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #eeeeee), color-stop(1, white));
+  /* IE5.5 - IE7 */
+  filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF);
+  /* IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr=#FFEEEEEE,EndColorStr=#FFFFFFFF)";
+  cursor: pointer;
+}
+/* line 145, ../sass/navigation.scss */
+.nav-section-label:first-child {
+  color: #999999;
+  border-bottom: 1px dashed #AAAAAA;
+}
+/* line 149, ../sass/navigation.scss */
+.nav-section-label:last-child {
+  color: #999999;
+  border-top: 1px dashed #AAAAAA;
+}
 
+/* line 155, ../sass/navigation.scss */
 .fixed-nav {
   position: fixed;
   /* This 'top' value is the number of pixels below the top of the visible window where it will be positioned */
   /* This needs to match the number that is subtracted from the offset in "entry-nav.js" */
-  top: 50px; }
+  top: 50px;
+}
 
+/* line 162, ../sass/navigation.scss */
 .fixed-menu {
   position: fixed;
-  top: 0px; }
+  top: 0px;
+}

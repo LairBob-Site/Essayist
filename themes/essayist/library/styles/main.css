@@ -1,3 +1,4 @@
+/* line 1, ../sass/main.scss */
 .home-module {
   width: auto;
   margin-bottom: 0.5em;
@@ -14,19 +15,27 @@
   padding-right: 16px;
   padding-bottom: 16px;
   overflow: auto;
-  cursor: pointer; }
-  .home-module .home-draft::hover {
-    cursor: auto; }
-  .home-module:hover {
-    background-color: #EEEEEE; }
+  cursor: pointer;
+}
+/* line 19, ../sass/main.scss */
+.home-module .home-draft::hover {
+  cursor: auto;
+}
+/* line 23, ../sass/main.scss */
+.home-module:hover {
+  background-color: #EEEEEE;
+}
 
+/* line 29, ../sass/main.scss */
 .home-thumb {
   float: left;
   clear: left;
   margin-left: 10px;
   margin-bottom: 0;
-  overflow: auto; }
+  overflow: auto;
+}
 
+/* line 39, ../sass/main.scss */
 .home-text {
   font-weight: normal;
   font-size: 14px;
@@ -34,38 +43,52 @@
   float: right;
   clear: right;
   width: 630px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
+/* line 51, ../sass/main.scss */
 .home-alternate .home-thumb {
   float: right;
   clear: right;
   margin-right: 0;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
+/* line 58, ../sass/main.scss */
 .home-alternate .home-text {
   float: left;
   clear: left;
   margin-left: 10px;
   margin-right: 0;
-  text-align: right; }
+  text-align: right;
+}
+/* line 66, ../sass/main.scss */
 .home-alternate .home-title {
-  text-align: right; }
+  text-align: right;
+}
 
+/* line 71, ../sass/main.scss */
 .home-draft {
-  color: #888888; }
-  .home-draft:hover {
-    cursor: default;
-    background-color: #FFFFFF;
-    border-color: #CCCCCC;
-    border-width: 1px;
-    border-style: solid;
-    padding: 15px; }
+  color: #888888;
+}
+/* line 73, ../sass/main.scss */
+.home-draft:hover {
+  cursor: default;
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+  border-width: 1px;
+  border-style: solid;
+  padding: 15px;
+}
 
+/* line 84, ../sass/main.scss */
 .home-title {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: bolder;
   font-size: 2em;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+}
 
+/* line 91, ../sass/main.scss */
 .home-section-label {
   font-size: 11px;
   text-transform: uppercase;
@@ -76,6 +99,9 @@
   margin-bottom: 1em;
   text-align: right;
   border-bottom: 1px solid black;
-  font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif; }
-  .home-section-label:first-child {
-    margin-top: 0; }
+  font-family: "Helvetica Neue","Lucida Sans Unicode", Verdana, sans-serif;
+}
+/* line 103, ../sass/main.scss */
+.home-section-label:first-child {
+  margin-top: 0;
+}

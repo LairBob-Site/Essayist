@@ -1,11 +1,17 @@
 /* Sidebar Category Posts
 ------------------------------------------ */
+/* line 6, ../sass/sidebar.scss */
 body .cat-post-item {
   color: #505050;
   line-height: 1.4;
-  margin-bottom: 1em; }
-  body .cat-post-item p {
-    font-size: 90%;
-    margin-bottom: 1em; }
-  body .cat-post-item li {
-    margin-bottom: 2em; }
+  margin-bottom: 1em;
+}
+/* line 10, ../sass/sidebar.scss */
+body .cat-post-item p {
+  font-size: 90%;
+  margin-bottom: 1em;
+}
+/* line 14, ../sass/sidebar.scss */
+body .cat-post-item li {
+  margin-bottom: 2em;
+}

@@ -4,6 +4,7 @@ DESCRIPTION: Two-column 950px fixed layout with one sidebar left of content
 */
 
 body {
+    @include blueprint;
     min-width:940px;
 }
 #header {

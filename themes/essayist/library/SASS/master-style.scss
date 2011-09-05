@@ -31,6 +31,10 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 /* Prepare theme for plugins */
 @import url('library/styles/plugins.css');
 
+/* Prepare theme for Compass / Blueprint integration */
+@import url('library/styles/print.css');
+@import url('library/styles/screen.css');
+
 /* -------------------------------------------------------------- 
    
    Default styles for Images

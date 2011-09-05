@@ -5,7 +5,7 @@ Description: Theme based on Thematic
 Author: Laurent Stanevich
 Author URI: http://lairbob.com/
 Template: thematic
-Version: 0.1
+Version: 0.2
 Tags: Thematic, LairBob, Essayist
 */
 
@@ -48,6 +48,11 @@ Tags: Thematic, LairBob, Essayist
 
 /* Prepare theme for plugins */
 @import url('../thematic/library/styles/plugins.css');
+
+/* Prepare theme for Blueprint / Compass integration */
+@import url('./library/styles/print.css');
+@import url('./library/styles/screen.css');
+
 
 /* Typography elements
 -------------------------------------------------------------- */

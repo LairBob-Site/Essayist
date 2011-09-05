@@ -1,5 +1,6 @@
 /* Quotations
 ------------------------------------------ */
+/* line 4, ../sass/reference.scss */
 body .quotation, body .sidenote {
   float: right;
   position: relative;
@@ -9,16 +10,23 @@ body .quotation, body .sidenote {
   padding: 0;
   color: #808080;
   line-height: 1.4;
-  font-family: Cambria,'Times New Roman',serif; }
+  font-family: Cambria,'Times New Roman',serif;
+}
+/* line 17, ../sass/reference.scss */
 body .sidenote-title {
-  font-weight: bold; }
+  font-weight: bold;
+}
+/* line 21, ../sass/reference.scss */
 body .quot_attrib {
   clear: none;
   margin: 0;
   padding: 0;
   text-align: right;
   font-style: italic;
-  font-family: Cambria,'Times New Roman',serif; }
+  font-family: Cambria,'Times New Roman',serif;
+}
+/* line 30, ../sass/reference.scss */
 body .quot_source {
   text-decoration: underline;
-  font-family: Cambria,'Times New Roman',serif; }
+  font-family: Cambria,'Times New Roman',serif;
+}
