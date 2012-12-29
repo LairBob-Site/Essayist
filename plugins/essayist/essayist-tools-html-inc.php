@@ -9,7 +9,8 @@ function htmlInclude($atts) {
                     ), $atts));
 
     // TODO Add error-checking to filepath / filepath strings
-    $strIncFileName = dirname(__FILE__) . '/includes/' . $incdir . '/' . $incfile;
+    // $strIncFileName = dirname(__FILE__) . '/includes/' . $incdir . '/' . $incfile;
+    $strIncFileName = 'http://lairbob.com/essays-html/' . $incdir . '/' . $incfile;
 
     $strIncFile = file_get_contents($strIncFileName);
 

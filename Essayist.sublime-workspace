@@ -1,0 +1,176 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"di",
+				"div	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Y/LairBob/HTML/plugins/essayist/includes/learning-making/learning-making.html",
+		"//psf/Home/Desktop/php.ini",
+		"/C/Users/lstanevich/AppData/Local/Temp/fz3temp-1/pull.php",
+		"/Y/LairBob/HTML/plugins/essayist/includes/learning-making/pull.php",
+		"/C/Users/lstanevich/.ssh/github_rsa.pub",
+		"/C/Users/lstanevich/.ssh/github_rsa",
+		"/C/Users/lstanevich/.ssh/config",
+		"//psf/Home/Desktop/FM - HTML - Main - 121222.html",
+		"/C/Users/lstanevich/AppData/Roaming/Sublime Text 2/Packages/FileDiffs/FileDiffs.sublime-settings",
+		"//psf/Home/Desktop/FM - HTML - Dev - 121222.html",
+		"/C/Users/lstanevich/AppData/Roaming/Sublime Text 2/Packages/User/SFTP.sublime-settings",
+		"/C/wamp/www/fluencymedia/wp-content/thesis/skins/fluency/skin.php",
+		"/C/wamp/www/fluencymedia/wp-content/thesis/master.php",
+		"/X/Ops/Dev/FM.com Dev (Shared)/WP/FM.com - Dev/Fluency Skin/thesis-classic-export-121130/classic/custom.php",
+		"/X/Ops/Dev/FM.com Dev (Shared)/WP/FM.com - Dev/Fluency Skin/thesis-classic-export-121130/classic/skin.php",
+		"/X/Ops/Dev/FM.com Dev (Shared)/WP/FM.com - Dev/Fluency Skin/fluency/skin.php",
+		"/C/wamp/www/fluencymedia/wp-config.php",
+		"/X/Ops/Planning/Production Schedule/Integrated/ProdMgmt/Dev/DB_Transport/Bulk_CSV_Insert_v00_121125.sql",
+		"/X/Ops/Planning/Production Schedule/Integrated/ProdMgmt/Dev/DB_Transport/Bulk_CSV_Insert_v00_121125"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"exec"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
